@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TopicHtmlView">
+            <rect key="frame" x="0.0" y="0.0" width="381" height="251"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RLr-T3-RVk">
+                    <rect key="frame" x="0.0" y="0.0" width="381" height="251"/>
+                </imageView>
+                <button opaque="NO" alpha="0.90000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KuD-Vi-uKn">
+                    <rect key="frame" x="0.0" y="221" width="381" height="30"/>
+                    <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="vZ8-3h-MxW"/>
+                    </constraints>
+                    <state key="normal" title="阅读原文" image="锁链.png"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="readCountLabel" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nt0-ZP-FZ3">
+                    <rect key="frame" x="311" y="0.0" width="70" height="20"/>
+                    <color key="backgroundColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="TP8-QR-dh4"/>
+                        <constraint firstAttribute="height" constant="20" id="aig-EM-IjN"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="RLr-T3-RVk" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="4Eq-Gy-1Xw"/>
+                <constraint firstAttribute="trailing" secondItem="KuD-Vi-uKn" secondAttribute="trailing" id="5f2-nB-LWr"/>
+                <constraint firstItem="RLr-T3-RVk" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="6VU-Of-zoY"/>
+                <constraint firstAttribute="trailing" secondItem="RLr-T3-RVk" secondAttribute="trailing" id="L2S-2X-pjE"/>
+                <constraint firstItem="KuD-Vi-uKn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="NXo-Y3-hOR"/>
+                <constraint firstAttribute="bottom" secondItem="RLr-T3-RVk" secondAttribute="bottom" id="ZET-pf-DPJ"/>
+                <constraint firstItem="Nt0-ZP-FZ3" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="d6J-NT-pJr"/>
+                <constraint firstAttribute="bottom" secondItem="KuD-Vi-uKn" secondAttribute="bottom" id="qxo-Vt-ZL7"/>
+                <constraint firstAttribute="trailing" secondItem="Nt0-ZP-FZ3" secondAttribute="trailing" id="xd7-zK-1oj"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="Full" destination="KuD-Vi-uKn" id="eed-1E-78b"/>
+                <outlet property="imageV" destination="RLr-T3-RVk" id="6LP-Uj-9aL"/>
+                <outlet property="readCountLabel" destination="Nt0-ZP-FZ3" id="BXY-bk-liK"/>
+            </connections>
+            <point key="canvasLocation" x="347.5" y="342.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="锁链.png" width="32" height="32"/>
+    </resources>
+</document>

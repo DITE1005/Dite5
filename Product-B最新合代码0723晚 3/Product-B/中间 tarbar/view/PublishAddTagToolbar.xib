@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="PublishAddTagToolbar" id="iN0-l3-epB" customClass="PublishAddTagToolbar">
+            <rect key="frame" x="0.0" y="0.0" width="478" height="148"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kwb-tq-eYf" userLabel="底部">
+                    <rect key="frame" x="2" y="97" width="474" height="51"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GtL-sA-E7l">
+                            <rect key="frame" x="0.0" y="0.0" width="35" height="51"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="35" id="hlT-wC-RXJ"/>
+                            </constraints>
+                            <state key="normal" image="post-@"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JWH-jM-FRk">
+                            <rect key="frame" x="36" y="0.0" width="35" height="51"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="35" id="d1T-ir-zr6"/>
+                            </constraints>
+                            <state key="normal" image="post-#"/>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tabbar-light" translatesAutoresizingMaskIntoConstraints="NO" id="T0B-RU-3Nz">
+                            <rect key="frame" x="0.0" y="0.0" width="474" height="51"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="JWH-jM-FRk" firstAttribute="bottom" secondItem="T0B-RU-3Nz" secondAttribute="bottom" id="7JV-dF-Wtq"/>
+                        <constraint firstItem="T0B-RU-3Nz" firstAttribute="leading" secondItem="kwb-tq-eYf" secondAttribute="leading" id="C4W-d3-Tgo"/>
+                        <constraint firstItem="T0B-RU-3Nz" firstAttribute="top" secondItem="kwb-tq-eYf" secondAttribute="top" id="DzZ-b9-yGd"/>
+                        <constraint firstAttribute="trailing" secondItem="T0B-RU-3Nz" secondAttribute="trailing" id="MI6-bM-11A"/>
+                        <constraint firstItem="GtL-sA-E7l" firstAttribute="bottom" secondItem="T0B-RU-3Nz" secondAttribute="bottom" id="dRG-DT-7uj"/>
+                        <constraint firstItem="GtL-sA-E7l" firstAttribute="leading" secondItem="T0B-RU-3Nz" secondAttribute="leading" id="mUC-tI-uhd"/>
+                        <constraint firstAttribute="bottom" secondItem="T0B-RU-3Nz" secondAttribute="bottom" id="v2L-CS-ebr"/>
+                        <constraint firstItem="JWH-jM-FRk" firstAttribute="leading" secondItem="GtL-sA-E7l" secondAttribute="trailing" constant="1" id="vpM-zf-Z1m"/>
+                        <constraint firstItem="JWH-jM-FRk" firstAttribute="top" secondItem="T0B-RU-3Nz" secondAttribute="top" id="wpY-24-3WK"/>
+                        <constraint firstItem="GtL-sA-E7l" firstAttribute="top" secondItem="T0B-RU-3Nz" secondAttribute="top" id="zes-uw-UFu"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l9O-Q3-dON" userLabel="顶部">
+                    <rect key="frame" x="2" y="0.0" width="474" height="87"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="kwb-tq-eYf" secondAttribute="trailing" constant="2" id="D0c-tc-teq"/>
+                <constraint firstItem="l9O-Q3-dON" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="2" id="FbV-2A-B8f"/>
+                <constraint firstItem="kwb-tq-eYf" firstAttribute="top" secondItem="l9O-Q3-dON" secondAttribute="bottom" constant="10" id="R0M-hL-CMv"/>
+                <constraint firstItem="l9O-Q3-dON" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="bqR-Cm-mB3"/>
+                <constraint firstItem="kwb-tq-eYf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="97" id="kCS-UG-aYe"/>
+                <constraint firstAttribute="bottom" secondItem="kwb-tq-eYf" secondAttribute="bottom" id="kfk-eh-7Hg"/>
+                <constraint firstItem="kwb-tq-eYf" firstAttribute="top" secondItem="l9O-Q3-dON" secondAttribute="bottom" constant="10" id="oDV-9d-hmu"/>
+                <constraint firstItem="kwb-tq-eYf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="2" id="pD3-Hv-aH2"/>
+                <constraint firstAttribute="trailing" secondItem="l9O-Q3-dON" secondAttribute="trailing" constant="2" id="w0a-uC-Lni"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="topView" destination="l9O-Q3-dON" id="fBy-jT-YPM"/>
+            </connections>
+            <point key="canvasLocation" x="286" y="227"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="post-#" width="19" height="19"/>
+        <image name="post-@" width="19" height="19"/>
+        <image name="tabbar-light" width="320" height="49"/>
+    </resources>
+</document>

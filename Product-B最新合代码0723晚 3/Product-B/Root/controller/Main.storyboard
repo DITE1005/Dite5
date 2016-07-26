@@ -1,0 +1,629 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="1UE-Sc-RZj">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
+    </dependencies>
+    <scenes>
+        <!--最新-->
+        <scene sceneID="br5-Px-SsI">
+            <objects>
+                <viewController id="nr5-JG-jxp" customClass="NewViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Xux-y1-HFY"/>
+                        <viewControllerLayoutGuide type="bottom" id="5Xc-sR-rKj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0XA-VG-oUT">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="最新" image="最新.png" selectedImage="最新1.png" id="JVa-Qj-bzU"/>
+                    <navigationItem key="navigationItem" id="g00-nd-Xap">
+                        <nil key="title"/>
+                        <barButtonItem key="leftBarButtonItem" title="审帖" id="hjq-Sg-lxD">
+                            <connections>
+                                <segue destination="ABn-BM-0W0" kind="show" id="9EP-Dv-Hgc"/>
+                            </connections>
+                        </barButtonItem>
+                        <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="nCj-X2-4pZ">
+                            <rect key="frame" x="112.5" y="7" width="150" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <state key="normal" title="最新">
+                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="new:" destination="nr5-JG-jxp" eventType="touchUpInside" id="z4R-Kj-yld"/>
+                            </connections>
+                        </button>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BB6-uW-jiG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1388.5" y="859.5"/>
+        </scene>
+        <!--最新-->
+        <scene sceneID="8AY-jQ-Hch">
+            <objects>
+                <navigationController id="Wwa-pJ-71R" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="最新" image="最新.png" selectedImage="最新1.png" id="UIp-5w-qpj">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="GVv-My-CWE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="nr5-JG-jxp" kind="relationship" relationship="rootViewController" id="3cX-K1-aF1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MTd-0g-mox" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1276.5" y="103.5"/>
+        </scene>
+        <!--关注-->
+        <scene sceneID="wzf-ov-6oB">
+            <objects>
+                <navigationController id="CaC-Ak-Rb3" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="关注" image="关注.png" selectedImage="关注1.png" id="8FM-GH-JLr">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="P54-uK-1zI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="rrF-UJ-7YA" kind="relationship" relationship="rootViewController" id="0eh-w3-R6a"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i5l-Dj-qFf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1753.5" y="103.5"/>
+        </scene>
+        <!--我的-->
+        <scene sceneID="jUT-Im-Sr2">
+            <objects>
+                <navigationController id="7jj-21-7VB" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="我的" image="我的.png" selectedImage="我的1.png" id="oxi-Jo-KjD">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="WDc-gt-YNy">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="1uK-py-JbI" kind="relationship" relationship="rootViewController" id="hMh-5G-5zA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kWq-ht-4RO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3135.5" y="-14.5"/>
+        </scene>
+        <!--我-->
+        <scene sceneID="IPI-GG-onA">
+            <objects>
+                <tableViewController storyboardIdentifier="METableViewController" id="1uK-py-JbI" customClass="METableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="3CT-Ay-4Ls">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="fnA-m4-Rvg">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fnA-m4-Rvg" id="R1Y-Rd-x8y">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="1uK-py-JbI" id="hgs-vY-jRW"/>
+                            <outlet property="delegate" destination="1uK-py-JbI" id="oSo-qR-2Iz"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="我" image="我的.png" selectedImage="我的1.png" id="GyR-iK-ajD"/>
+                    <navigationItem key="navigationItem" id="FMq-4Y-JY1">
+                        <rightBarButtonItems>
+                            <barButtonItem image="mine-setting-iconN" id="tqG-KO-KrW">
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="settingItem:" destination="1uK-py-JbI" id="ulA-t5-srs"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem id="Ugj-oD-MOO">
+                                <connections>
+                                    <action selector="clickNightMode:" destination="1uK-py-JbI" id="hXi-Kp-2jB"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="nightMode" destination="Ugj-oD-MOO" id="uLc-gw-AnL"/>
+                        <outlet property="settingButton" destination="tqG-KO-KrW" id="5rx-gg-eAX"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M7l-ea-uzy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3290.5" y="642.5"/>
+        </scene>
+        <!--My Tab Bar Controller-->
+        <scene sceneID="vv8-Ri-p5X">
+            <objects>
+                <tabBarController id="1UE-Sc-RZj" customClass="MyTabBarController" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="YJp-hy-hhf"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="aCS-ih-K6v">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="ERR-If-1Kf" kind="relationship" relationship="viewControllers" id="8H8-v4-3vh"/>
+                        <segue destination="Wwa-pJ-71R" kind="relationship" relationship="viewControllers" id="Az2-P7-MHM"/>
+                        <segue destination="CaC-Ak-Rb3" kind="relationship" relationship="viewControllers" id="OMv-CJ-pVB"/>
+                        <segue destination="7jj-21-7VB" kind="relationship" relationship="viewControllers" id="mXv-Xm-KLR"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cDi-hd-as6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2000.5" y="-785.5"/>
+        </scene>
+        <!--精选-->
+        <scene sceneID="7tk-e9-Z9R">
+            <objects>
+                <navigationController id="ERR-If-1Kf" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="精选" image="主页.png" selectedImage="主页1.png" id="Efi-fT-549">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="EM5-lZ-B5s">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="dDl-80-CsA" kind="relationship" relationship="rootViewController" id="NN1-Id-Wfv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cto-ak-7Cs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-841.5" y="115.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Fsr-Ll-Hlo">
+            <objects>
+                <navigationController id="Ppe-wz-oS4" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="iTE-Zs-Sx0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="GBS-vU-t8K" kind="relationship" relationship="rootViewController" id="viR-wm-nWd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kf5-3f-hYj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-360.5" y="939.5"/>
+        </scene>
+        <!--Verify View Controller-->
+        <scene sceneID="AeH-j2-WEr">
+            <objects>
+                <viewController id="ABn-BM-0W0" customClass="VerifyViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="i0C-N7-Y8E"/>
+                        <viewControllerLayoutGuide type="bottom" id="wgk-4f-2jo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="g8a-91-alf">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rDf-bu-CmH">
+                                <rect key="frame" x="0.0" y="559" width="375" height="44"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FyW-6N-bzD">
+                                        <rect key="frame" x="0.0" y="0.0" width="94" height="44"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <state key="normal" title="举报">
+                                            <color key="titleColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="clickReport:" destination="ABn-BM-0W0" eventType="touchUpInside" id="n3i-ma-uHT"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wAL-yk-nS2">
+                                        <rect key="frame" x="94" y="0.0" width="94" height="44"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <state key="normal" title="顶" image="mainCellDing">
+                                            <color key="titleColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="clickDing:" destination="ABn-BM-0W0" eventType="touchUpInside" id="Y1Z-mr-BVi"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DUo-bi-M2N">
+                                        <rect key="frame" x="188" y="0.0" width="94" height="44"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <state key="normal" title="踩" image="mainCellCai">
+                                            <color key="titleColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="clickCai:" destination="ABn-BM-0W0" eventType="touchUpInside" id="Kim-Re-5Vw"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C2H-6B-hcJ">
+                                        <rect key="frame" x="281" y="0.0" width="94" height="44"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <state key="normal" title="跳过">
+                                            <color key="titleColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="clickSkip:" destination="ABn-BM-0W0" eventType="touchUpInside" id="0KV-IS-Ydc"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="wAL-yk-nS2" firstAttribute="width" secondItem="rDf-bu-CmH" secondAttribute="width" multiplier="0.25" id="5JZ-gj-FGk"/>
+                                    <constraint firstAttribute="bottom" secondItem="wAL-yk-nS2" secondAttribute="bottom" id="Auh-r3-lVY"/>
+                                    <constraint firstItem="C2H-6B-hcJ" firstAttribute="width" secondItem="rDf-bu-CmH" secondAttribute="width" multiplier="0.25" id="CVG-Yg-g2p"/>
+                                    <constraint firstItem="FyW-6N-bzD" firstAttribute="leading" secondItem="rDf-bu-CmH" secondAttribute="leading" id="Cim-uM-Yym"/>
+                                    <constraint firstAttribute="bottom" secondItem="DUo-bi-M2N" secondAttribute="bottom" id="GDX-CF-FEw"/>
+                                    <constraint firstItem="FyW-6N-bzD" firstAttribute="width" secondItem="rDf-bu-CmH" secondAttribute="width" multiplier="0.25" id="KCR-CV-byX"/>
+                                    <constraint firstItem="FyW-6N-bzD" firstAttribute="top" secondItem="rDf-bu-CmH" secondAttribute="top" id="MnV-vj-b83"/>
+                                    <constraint firstItem="wAL-yk-nS2" firstAttribute="leading" secondItem="FyW-6N-bzD" secondAttribute="trailing" id="V06-3W-Alb"/>
+                                    <constraint firstItem="DUo-bi-M2N" firstAttribute="width" secondItem="rDf-bu-CmH" secondAttribute="width" multiplier="0.25" id="XQV-ln-hvG"/>
+                                    <constraint firstAttribute="height" constant="44" id="aYd-Ui-zYP"/>
+                                    <constraint firstItem="wAL-yk-nS2" firstAttribute="top" secondItem="rDf-bu-CmH" secondAttribute="top" id="hPP-GC-iVH"/>
+                                    <constraint firstAttribute="bottom" secondItem="FyW-6N-bzD" secondAttribute="bottom" id="i4b-vW-OJz"/>
+                                    <constraint firstItem="DUo-bi-M2N" firstAttribute="top" secondItem="rDf-bu-CmH" secondAttribute="top" id="iJa-nD-JMG"/>
+                                    <constraint firstItem="C2H-6B-hcJ" firstAttribute="top" secondItem="rDf-bu-CmH" secondAttribute="top" id="o3P-0N-dSO"/>
+                                    <constraint firstItem="C2H-6B-hcJ" firstAttribute="leading" secondItem="DUo-bi-M2N" secondAttribute="trailing" id="uEg-Ut-55z"/>
+                                    <constraint firstAttribute="bottom" secondItem="C2H-6B-hcJ" secondAttribute="bottom" id="vVi-bg-YT2"/>
+                                    <constraint firstItem="DUo-bi-M2N" firstAttribute="leading" secondItem="wAL-yk-nS2" secondAttribute="trailing" id="yGU-J4-84t"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="rDf-bu-CmH" secondAttribute="bottom" id="57G-JQ-R7W"/>
+                            <constraint firstAttribute="trailing" secondItem="rDf-bu-CmH" secondAttribute="trailing" id="UmI-DX-AfC"/>
+                            <constraint firstItem="rDf-bu-CmH" firstAttribute="leading" secondItem="g8a-91-alf" secondAttribute="leading" id="VOk-5l-aKq"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="OaD-wf-j7a">
+                        <nil key="title"/>
+                        <barButtonItem key="leftBarButtonItem" title="返回" id="rwH-pS-ROW">
+                            <color key="tintColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="clickBack:" destination="ABn-BM-0W0" id="Nuh-st-rfm"/>
+                            </connections>
+                        </barButtonItem>
+                        <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xcl-vO-kWX">
+                            <rect key="frame" x="112.5" y="7" width="150" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <state key="normal" title="全部"/>
+                            <connections>
+                                <action selector="clickAll:" destination="ABn-BM-0W0" eventType="touchUpInside" id="OfL-oV-JaJ"/>
+                            </connections>
+                        </button>
+                        <barButtonItem key="rightBarButtonItem" title="写评论" id="pGx-Lg-KpO">
+                            <color key="tintColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="clickPost:" destination="ABn-BM-0W0" id="uV6-Bn-cuY"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="allButton" destination="xcl-vO-kWX" id="0yH-AQ-Czs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ee2-i0-P6u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2422.5" y="780.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="vzy-70-FHy">
+            <objects>
+                <navigationController id="y9N-f1-xnI" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Kk3-fc-n8F">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="8Dh-xP-VHm" kind="relationship" relationship="rootViewController" id="AfQ-IK-FTD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a0Y-It-DFO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-841.5" y="1726.5"/>
+        </scene>
+        <!--内容贡献奖-->
+        <scene sceneID="FQP-yl-kw2">
+            <objects>
+                <viewController id="8Dh-xP-VHm" customClass="CupViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lJB-lg-J1p"/>
+                        <viewControllerLayoutGuide type="bottom" id="KCm-PM-6r8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Qtk-lb-l1g">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="内容贡献奖" id="yzu-0f-GOH">
+                        <barButtonItem key="leftBarButtonItem" title="&lt;返回" id="n9I-ht-XsS">
+                            <color key="tintColor" red="0.01959375" green="0.01959375" blue="0.01959375" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="back:" destination="8Dh-xP-VHm" id="CSZ-wF-h7c"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dWQ-Yn-cnt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-309.5" y="1726.5"/>
+        </scene>
+        <!--穿越-->
+        <scene sceneID="jxx-jO-Xuy">
+            <objects>
+                <viewController id="GBS-vU-t8K" customClass="CrossViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mMa-hA-fTm"/>
+                        <viewControllerLayoutGuide type="bottom" id="Cfp-xi-Ybw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="k6I-wC-uXv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="穿越" id="dQV-7R-UTE">
+                        <barButtonItem key="leftBarButtonItem" title="&lt;返回" id="MAy-2l-GV1">
+                            <color key="tintColor" red="0.01959375" green="0.01959375" blue="0.01959375" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="back:" destination="GBS-vU-t8K" id="ZZM-1y-PW1"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="穿越.png" id="Skh-uW-hrQ">
+                            <color key="tintColor" red="0.019593749999999965" green="0.019593749999999965" blue="0.019593749999999965" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="new:" destination="GBS-vU-t8K" id="2gk-Hu-ajv"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bax-Vu-bBA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="56.5" y="961.5"/>
+        </scene>
+        <!--Essence View Controller-->
+        <scene sceneID="T6z-hq-emf">
+            <objects>
+                <viewController id="dDl-80-CsA" customClass="EssenceViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3hy-Qv-HRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="r8G-Sl-lwz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="D6f-VJ-IWS">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Etf-tL-TIV">
+                        <nil key="title"/>
+                        <barButtonItem key="leftBarButtonItem" image="奖杯.png" id="bHa-kA-2Ap">
+                            <color key="tintColor" red="0.029291666666666716" green="0.029291666666666716" blue="0.029291666666666716" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="y9N-f1-xnI" kind="show" id="QPY-Kb-ln0"/>
+                            </connections>
+                        </barButtonItem>
+                        <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="TFU-U6-4qZ">
+                            <rect key="frame" x="112.5" y="7" width="150" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <state key="normal" title="精选">
+                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                        </button>
+                        <barButtonItem key="rightBarButtonItem" image="穿越.png" id="VQi-N4-Ju8">
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="Ppe-wz-oS4" kind="showDetail" id="TRw-6c-jxf"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wbt-Qy-cID" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-883.5" y="944.5"/>
+        </scene>
+        <!--关注-->
+        <scene sceneID="Oar-rh-nDh">
+            <objects>
+                <viewController id="rrF-UJ-7YA" customClass="FocuseViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mjm-IE-Pz7"/>
+                        <viewControllerLayoutGuide type="bottom" id="hX6-sH-J9i"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mIy-fa-jop">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="header_cry_icon" translatesAutoresizingMaskIntoConstraints="NO" id="HTr-zp-5JI">
+                                <rect key="frame" x="146" y="121" width="83" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="KY0-Yo-WMQ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lam-OU-GUg">
+                                <rect key="frame" x="70" y="241" width="235" height="108"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="235" id="W7g-JL-KTm"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="快快">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="20" name="PingFangSC-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="登陆">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="20" name="PingFangSC-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="吧！关注你的">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="20" name="PingFangSC-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="百思最牛人">
+                                        <attributes>
+                                            <color key="NSColor" red="0.40000000600000002" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="20" name="PingFangSC-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="，观看各种动态，嗨图，让你">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="20" name="PingFangSC-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="嘿嘿嘿">
+                                        <attributes>
+                                            <color key="NSColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="20" name="PingFangSC-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="~……">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="20" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jcT-S8-D6G">
+                                <rect key="frame" x="68" y="429" width="53" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="HS4-EM-L4E"/>
+                                    <constraint firstAttribute="width" constant="53" id="o4S-MW-Y8a"/>
+                                </constraints>
+                                <state key="normal" title="登陆">
+                                    <color key="titleColor" red="1" green="0.1754803465" blue="0.073819423740000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginButton:" destination="rrF-UJ-7YA" eventType="touchUpInside" id="I1w-ds-YPg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UUN-wp-SkJ">
+                                <rect key="frame" x="263" y="429" width="44" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="jZC-MJ-T8A"/>
+                                </constraints>
+                                <state key="normal" title="注册">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="registerButton:" destination="rrF-UJ-7YA" eventType="touchUpInside" id="0cN-b0-cqr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99027903049999999" green="0.98559867759999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="jcT-S8-D6G" firstAttribute="bottom" secondItem="UUN-wp-SkJ" secondAttribute="bottom" id="0Ic-yO-UR7"/>
+                            <constraint firstItem="jcT-S8-D6G" firstAttribute="leading" secondItem="mIy-fa-jop" secondAttribute="leading" constant="68" id="5uA-aS-eCu"/>
+                            <constraint firstItem="lam-OU-GUg" firstAttribute="leading" secondItem="mIy-fa-jop" secondAttribute="leading" constant="70" id="8iN-UN-S0n"/>
+                            <constraint firstItem="HTr-zp-5JI" firstAttribute="centerX" secondItem="mIy-fa-jop" secondAttribute="centerX" id="9vl-Ip-Bcn"/>
+                            <constraint firstItem="HTr-zp-5JI" firstAttribute="top" secondItem="mjm-IE-Pz7" secondAttribute="bottom" constant="121" id="NeG-9A-28k"/>
+                            <constraint firstAttribute="trailing" secondItem="lam-OU-GUg" secondAttribute="trailing" constant="70" id="XxY-l8-L0M"/>
+                            <constraint firstItem="lam-OU-GUg" firstAttribute="centerX" secondItem="mIy-fa-jop" secondAttribute="centerX" id="Yck-vw-0Lk"/>
+                            <constraint firstAttribute="trailing" secondItem="HTr-zp-5JI" secondAttribute="trailing" constant="146" id="bmX-8l-X7J"/>
+                            <constraint firstItem="HTr-zp-5JI" firstAttribute="centerX" secondItem="mIy-fa-jop" secondAttribute="centerX" id="bvw-dA-TZk"/>
+                            <constraint firstItem="lam-OU-GUg" firstAttribute="top" secondItem="HTr-zp-5JI" secondAttribute="bottom" constant="40" id="ecc-xF-cux"/>
+                            <constraint firstItem="jcT-S8-D6G" firstAttribute="top" secondItem="lam-OU-GUg" secondAttribute="bottom" constant="80" id="fEb-BN-kBR"/>
+                            <constraint firstAttribute="trailing" secondItem="UUN-wp-SkJ" secondAttribute="trailing" constant="68" id="o10-ne-7pj"/>
+                            <constraint firstItem="jcT-S8-D6G" firstAttribute="top" secondItem="UUN-wp-SkJ" secondAttribute="top" id="sc6-3f-C7v"/>
+                            <constraint firstItem="lam-OU-GUg" firstAttribute="top" secondItem="HTr-zp-5JI" secondAttribute="bottom" constant="50" id="ygZ-bD-wNs"/>
+                            <constraint firstItem="lam-OU-GUg" firstAttribute="top" secondItem="HTr-zp-5JI" secondAttribute="bottom" constant="40" id="z1c-Xz-ACR"/>
+                            <constraint firstItem="HTr-zp-5JI" firstAttribute="leading" secondItem="mIy-fa-jop" secondAttribute="leading" constant="146" id="zpR-lw-Gc2"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="ygZ-bD-wNs"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="关注" image="关注.png" selectedImage="关注1.png" id="gd6-wt-gV9"/>
+                    <navigationItem key="navigationItem" title="关注" id="zIA-W2-sYh">
+                        <barButtonItem key="leftBarButtonItem" image="添加.png" id="ff3-hP-0Nd">
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K6x-xJ-MNv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1784.5" y="850.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="header_cry_icon" width="48" height="48"/>
+        <image name="mainCellCai" width="20" height="20"/>
+        <image name="mainCellDing" width="20" height="20"/>
+        <image name="mine-setting-iconN" width="20" height="20"/>
+        <image name="主页.png" width="32" height="32"/>
+        <image name="主页1.png" width="33" height="32"/>
+        <image name="关注.png" width="32" height="32"/>
+        <image name="关注1.png" width="46" height="32"/>
+        <image name="奖杯.png" width="17" height="16"/>
+        <image name="我的.png" width="32" height="32"/>
+        <image name="我的1.png" width="32" height="32"/>
+        <image name="最新.png" width="32" height="32"/>
+        <image name="最新1.png" width="32" height="32"/>
+        <image name="添加.png" width="32" height="32"/>
+        <image name="穿越.png" width="16" height="16"/>
+    </resources>
+</document>

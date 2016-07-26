@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="XFContentHtmlView">
+            <rect key="frame" x="0.0" y="0.0" width="347" height="200"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FuG-6E-LJm">
+                    <rect key="frame" x="0.0" y="0.0" width="347" height="200"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iuy-jA-Maf">
+                    <rect key="frame" x="0.0" y="150" width="347" height="50"/>
+                    <color key="backgroundColor" red="0.5" green="0.5" blue="0.5" alpha="0.75465425531914898" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="U53-50-7Ic"/>
+                    </constraints>
+                    <state key="normal" title="查看全文" image="锁链.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="clickBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="DFE-sE-q7w"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="iuy-jA-Maf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="7P1-78-ojZ"/>
+                <constraint firstAttribute="bottom" secondItem="iuy-jA-Maf" secondAttribute="bottom" id="DCH-vK-VXN"/>
+                <constraint firstAttribute="bottom" secondItem="FuG-6E-LJm" secondAttribute="bottom" id="L2Y-R5-I83"/>
+                <constraint firstItem="FuG-6E-LJm" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="eBW-lI-4dX"/>
+                <constraint firstAttribute="trailing" secondItem="iuy-jA-Maf" secondAttribute="trailing" id="fux-KY-h6s"/>
+                <constraint firstAttribute="trailing" secondItem="FuG-6E-LJm" secondAttribute="trailing" id="iKZ-ky-SsS"/>
+                <constraint firstItem="FuG-6E-LJm" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="vQU-Yh-xKv"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="beijingImageView" destination="FuG-6E-LJm" id="F6L-t7-lT1"/>
+                <outlet property="clickBtn" destination="iuy-jA-Maf" id="2Ps-KG-boY"/>
+            </connections>
+            <point key="canvasLocation" x="283.5" y="359"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="锁链.png" width="32" height="32"/>
+    </resources>
+</document>

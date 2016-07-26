@@ -1,0 +1,127 @@
+//
+//  PrefixHeader.pch
+//  Product-B
+//
+//  Created by lanou on 16/7/11.
+//  Copyright © 2016年 lanou. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+
+
+/**
+ *  尺寸
+ *
+ *
+ */
+
+#define kScreenWidth [UIScreen mainScreen].bounds.size.width
+#define kScreenHeight [UIScreen mainScreen].bounds.size.height
+
+
+#define KNaviH 64
+#define KTabbarH 49
+#define KTitleCollectionViewH 40
+#define JYJScreenBounds [UIScreen mainScreen].bounds
+#define JYJKeyWindow [UIApplication sharedApplication].keyWindow
+
+
+
+/**
+ *  图片
+ *
+ *
+ */
+
+#define KImagePlaceHolder [UIImage imageNamed:@"123.jpg"]
+
+
+/**
+ *  接口API
+ */
+//精华-推荐
+#define KRecommand @"http://s.budejie.com/topic/list/jingxuan/1/bs0315-iphone-4.3/0-30.json"
+//精华 -视频
+#define KVideo @"http://s.budejie.com/topic/list/jingxuan/41/bs0315-iphone-4.3/0-30.json"
+//精华-图片
+#define KPhoto @"http://s.budejie.com/topic/list/jingxuan/10/bs0315-iphone-4.3/0-30.json"
+//精华 -段子
+#define KWord @"http://s.budejie.com/topic/tag-topic/64/hot/bs0315-iphone-4.3/0-30.json"
+//精华-网红
+#define KNetworkHot @"http://s.budejie.com/topic/tag-topic/3096/hot/bs0315-iphone-4.3/0-30.json"
+//精华-排行
+#define KSort @"http://s.budejie.com/topic/list/remen/1/bs0315-iphone-4.3/0-30.json"
+//精华-社会
+#define KSociety @"http://s.budejie.com/topic/tag-topic/473/hot/bs0315-iphone-4.3/0-30.json"
+//精华-美女
+#define KBeauty @"http://s.budejie.com/topic/tag-topic/117/hot/bs0315-iphone-4.3/0-30.json"
+//精华-冷知识
+#define KColdKnowledge @"http://s.budejie.com/topic/tag-topic/3176/hot/bs0315-iphone-4.3/0-30.json"
+//精华-游戏
+#define KGame @"http://s.budejie.com/topic/tag-topic/164/hot/bs0315-iphone-4.3/0-30.json"
+//精华-健身
+#define KGym @"http://s.budejie.com/topic/tag-topic/735/hot/bs0315-iphone-4.3/0-30.json"
+
+
+//设置-关于我们
+#define KAbout @"http://www.budejie.com/budejie/aboutus.html?client=iphone&market=&ver=4.3&device=iPhone%205&uid=&sex=m&udid=&mac=&openudid=d41d8cd98f00b204e9800998ecf8427e5227b17d&asid=0CBD6687-21DF-4F3D-93CA-80BFE7754AFB&jbk=0&appname=bs0315&1469250408"
+
+
+#define KFavorite @"http://api.budejie.com/api/api_open.php?c=data&a=favourite&id=19461224&format=json&client=iPhone&market=&appID=1093382986&appName=bs0315&version=4.3&device=iPhone%205&userID=18800583&userSex=f&jailbroken=0&udid=&openUDID=d41d8cd98f00b204e9800998ecf8427e5227b17d&mac=&asid=0CBD6687-21DF-4F3D-93CA-80BFE7754AFB&openudid=d41d8cd98f00b204e9800998ecf8427e5227b17d&ver=4.3&jbk=jailbroken=0&uid=userID=18800583&sex=userSex=f&tj_from=image"
+
+#define KHelp @"http://neihanshequ.com/help/"
+
+#define KGymTag @"http://api.budejie.com/api/api_open.php?a=theme_users&appname=bs0315&asid=0CBD6687-21DF-4F3D-93CA-80BFE7754AFB&c=topic&client=iphone&device=iPhone%205&from=ios&jbk=0&mac=&market=&openudid=d41d8cd98f00b204e9800998ecf8427e5227b17d&sex=f&theme_id=735&udid=&uid=18800583&ver=4.3"
+
+
+
+/**
+ *  颜色
+ */
+
+
+#define PKCOLOR(R,G,B) [UIColor colorWithRed:(R)/255.0 green:(G)/255.0 blue:(B)/255.0 alpha:1.0]
+
+
+
+/**
+ *  第三方
+ */
+
+#import <AFNetworking.h>
+#import <UIImageView+WebCache.h>
+#import <Masonry.h>
+#import <MJRefresh.h>
+#import <MBProgressHUD.h>
+#import <FMDB.h>
+#import <DACircularProgressView.h>
+#import <DALabeledCircularProgressView.h>
+#import <MJExtension.h>
+#import <AVOSCloud.h>
+#import <DKNightVersion/DKNightVersion.h>
+
+/**
+ *  工具类
+ */
+
+#import "AdjustHeight.h" //自适应高度
+#import "CALayer+Addition.h" //类目 用于在Xib或SB中直接更改UIColor
+#import "RequestManager.h"  //基于AFNetworking的网络请求封装
+#import "UIView+Extension.h"
+#import "NetWorkStateManager.h"
+#import "NSString+BXExtension.h"
+#import "UIView+TWFrame.h"
+#import "NSString+Html.h"
+#import "UIImage+XFCircle.h"
+#import "UIScrollView+_DScrollView.h"
+#import <objc/runtime.h>
+#import "SVProgressHUD.h"
+
+
+
+//登录测试账号18321489886 123
+
+
+#endif /* PrefixHeader_pch */
